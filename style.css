@@ -1,0 +1,305 @@
+* {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #333333;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 12%;
+    width: 100%;
+    background: #383E4C;
+    z-index: 3;
+    font-size: 2vmax;
+}
+
+.navbar .box {
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    height: 55%;
+    width: 15%;
+    background: #383E4C;
+    color: #fff;
+    border: 0.1vmax solid #646d7c;
+}
+
+.spacer {
+    display: block;
+    width: 100%;
+    height: 12%;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 99.5%;
+}
+
+.homepage::before {
+    display: block; 
+    content: ""; 
+    position: absolute; 
+    top: 12%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /*filter: blur(0.2vmax);*/
+    background: url("images/background-1.jpg") center fixed no-repeat;
+    background-size: cover;
+}
+
+/*.homepage::after {
+    display: block; 
+    content: ""; 
+    position: relative; 
+    top: 2%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}*/
+
+.homepage .title {
+    flex: 1 1 auto;
+    font-size: 4.5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+
+.homepage .description {
+    flex: 1 1 auto;
+    font-size: 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+}
+
+.about-us {
+    margin-top: 7%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about-us .container {
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.about-us .container.container-1 {
+    justify-content: flex-end;
+}
+
+.about-us .container.container-2 {
+    justify-content: center;
+
+}
+
+.about-us .container.container-3 {
+    justify-content: flex-start;
+}
+
+.about-us [class*="container"] [class*="container"] {   
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+}
+
+.about-us [class*="container"] .container.container-1 {   
+    height: 85%;
+}
+
+.about-us [class^="container"] .container.container-2 {   
+    height: 90%;    
+}
+
+.about-us img {
+    height: 22%;
+}
+
+.about-us .heading {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   width: 80%;
+   font-size: 2.2vmax;
+}
+
+.about-us .heading.heading-1 {
+    color: #178A27;
+}
+
+.about-us .heading.heading-2 {
+    color: #1686C1;
+}
+
+.about-us .heading.heading-3 {
+    color: #666666;
+}
+
+.about-us .content {
+    flex: 3;
+    justify-content: flex-start;
+    line-height: 150%;
+    width: 80%;
+    font-size: 1.7vmax;
+} 
+
+.about-us .button-section {
+    width: 80%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us .button-section button {
+    border-radius: 0.3em;
+    width: 90%;
+    height: 40%;
+    color: white;
+    font-size: 1.8vmax;
+}
+
+.about-us .button-section .button-1 {
+    background-color: #178A27;
+    align-self: flex-start;
+}
+
+.about-us .button-section .button-2 {
+    background-color: #1686C1;
+    align-self: center;
+}
+
+.about-us .button-section .button-3 {
+    background-color: #852406;
+    align-self: center;
+}
+
+.two-column-container {
+    width: 100%;
+    height: 105%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.two-column-container [class*="side"] {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.two-column-container .left-side {
+    height: 92%;
+    margin-right: 1.5%;
+}
+
+.two-column-container .right-side {
+    height: 100%;
+    margin-left: 1.5%;
+}
+
+.two-column-container .img-header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-column-container  .left-side .img-header-content {
+    height: 84.78%;
+}
+
+.two-column-container  .right-side .img-header-content {
+    height: 78%;
+}
+
+.two-column-container [class*="left-side"] .img {
+    flex: 5.5;
+    background: url("images/two-col-left.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.two-column-container [class*="right-side"] .img {
+    flex: 5.5;
+    background: url("images/two-col-right.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.two-column-container .heading {
+   flex: 2;
+   width: 86.5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.3vmax;
+   color: #666666
+}
+
+.two-column-container .content-1 {
+    width: 86.5%;
+    flex: 7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 150%;
+    font-size: 1.7vmax;
+
+}
+
+.two-column-container .content-2 {
+    flex: 5.5;
+    width: 86.5%;
+    line-height: 150%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.7vmax;
+}
+
+.two-column-container .button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86.5%;
+    height: 22%;
+}
+
+.two-column-container .button-section button {
+    border-radius: 0.4em;
+    width: 55%;
+    height: 35%;
+    background-color: white;
+    color: #666666;
+    font-size: 2.3vmax;
+}
