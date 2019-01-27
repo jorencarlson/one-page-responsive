@@ -10,33 +10,40 @@
 .navbar {
     position: fixed;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: fixed;
     left: 0;
     top: 0;
-    height: 12%;
+    height: 11%;
     width: 100%;
     background: #383E4C;
     z-index: 3;
-    font-size: 2vmax;
+    font-size: 17px;
 }
 
 .navbar .box {
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
     display: flex;
     justify-content: center;;
     align-items: center;
-    height: 55%;
-    width: 15%;
+    height: 70%;
+    width: 12.5%;
     background: #383E4C;
     color: #fff;
     border: 0.1vmax solid #646d7c;
 }
 
-.spacer {
+.navbar .box:hover {
+    background: lightgray;
+}
+
+.spacer-navbar {
     display: block;
     width: 100%;
-    height: 12%;
+    height: 11%;
 }
 
 .homepage {
@@ -45,19 +52,19 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 99.5%;
+    height: 80%;
 }
 
 .homepage::before {
     display: block; 
     content: ""; 
     position: absolute; 
-    top: 12%;
+    top: 11%;
     left: 0;
     right: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 80.5%;
     /*filter: blur(0.2vmax);*/
     background: url("images/background-1.jpg") center fixed no-repeat;
     background-size: cover;
@@ -77,7 +84,9 @@
 
 .homepage .title {
     flex: 1 1 auto;
-    font-size: 4.5vmax;
+    font-size: 70px;
+    text-shadow: 2px 2px black;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -87,7 +96,8 @@
 
 .homepage .description {
     flex: 1 1 auto;
-    font-size: 3vmax;
+    font-size: 26px;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -96,6 +106,7 @@
 }
 
 .about-us {
+    border: 3px solid blue;
     margin-top: 7%;
     width: 100%;
     height: 100%;
@@ -115,7 +126,6 @@
 
 .about-us .container.container-2 {
     justify-content: center;
-
 }
 
 .about-us .container.container-3 {
@@ -123,7 +133,7 @@
 }
 
 .about-us [class*="container"] [class*="container"] {   
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +159,7 @@
    align-items: center;
    justify-content: flex-start;
    width: 80%;
-   font-size: 2.2vmax;
+   font-size: 21px;
 }
 
 .about-us .heading.heading-1 {
@@ -169,7 +179,7 @@
     justify-content: flex-start;
     line-height: 150%;
     width: 80%;
-    font-size: 1.7vmax;
+    font-size: 15px;
 } 
 
 .about-us .button-section {
@@ -182,10 +192,10 @@
 
 .about-us .button-section button {
     border-radius: 0.3em;
-    width: 90%;
-    height: 40%;
+    width: 95%;
+    height: 30%;
     color: white;
-    font-size: 1.8vmax;
+    font-size: 19px;
 }
 
 .about-us .button-section .button-1 {
@@ -205,7 +215,7 @@
 
 .two-column-container {
     width: 100%;
-    height: 105%;
+    height: 92%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -220,7 +230,7 @@
 }
 
 .two-column-container .left-side {
-    height: 92%;
+    height: 94%;
     margin-right: 1.5%;
 }
 
@@ -237,7 +247,7 @@
 }
 
 .two-column-container  .left-side .img-header-content {
-    height: 84.78%;
+    height: 82.98%;
 }
 
 .two-column-container  .right-side .img-header-content {
@@ -262,7 +272,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 2.3vmax;
+   font-size: 21px;
    color: #666666
 }
 
@@ -273,7 +283,7 @@
     justify-content: flex-start;
     align-items: center;
     line-height: 150%;
-    font-size: 1.7vmax;
+    font-size: 15px;
 
 }
 
@@ -284,7 +294,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.7vmax;
+    font-size: 15px;
 }
 
 .two-column-container .button-section {
@@ -301,5 +311,5 @@
     height: 35%;
     background-color: white;
     color: #666666;
-    font-size: 2.3vmax;
+    font-size: 19px;
 }
